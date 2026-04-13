@@ -1,6 +1,6 @@
-# Universal Competitive Intelligence Platform
+# Universal Competitive Intelligence Platform (RivalLens-AI)
 
-Welcome to the **Universal Competitive Intelligence Platform**! 
+Welcome to the **RivalLens-AI**! 
 
 This project is an advanced, automated pipeline designed to deliver **"Zero-Research Competitor Analysis."** By simply inputting a competitor's name and product, the system performs a multi-dimensional analysis and outputs a comprehensive **Intelligence Report** — arming your team with actionable tactics, sentiment analysis, product data, and comparison metrics within seconds.
 
