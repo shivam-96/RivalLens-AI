@@ -1,9 +1,15 @@
 venv/
 .env
+.env.local
 chroma_db/
 backend/output/
 __pycache__/
 *.pyc
 node_modules/
 dist/
+dist-ssr/
 .vite/
+*.log
+.vscode/
+.idea/
+.DS_Store

@@ -8,6 +8,12 @@
   --color-primary-500: #0ea5e9;
   --color-primary-600: #0284c7;
   --color-primary-900: #0c4a6e;
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  --animate-fade-in: fade-in 0.5s ease-out;
 }
 
 @layer base {
