@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-900: #0c4a6e;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans min-h-screen overflow-x-hidden;
+  }
+}
+
+@layer components {
+  /* Common glass/structured card for the enterprise aesthetic */
+  .card-container {
+    @apply bg-white border border-slate-200 rounded-xl shadow-sm p-6;
+  }
+  
+  /* Flashcard Architecture */
+  .flip-card-perspective {
+    perspective: 1000px;
+    background-color: transparent;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Scrollbar styling for cleanliness */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300;
+}
